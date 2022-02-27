@@ -1,7 +1,6 @@
 var repoNameEl = document.querySelector("#repo-name");
 var issueContainerEl = document.querySelector("#issues-container");
 var limitWarningEl = document.querySelector("#limit-warning");
-var repoNameEl = document.querySelector("#repo-name");
 
 var getRepoName = function() {
     // assign query string to a variable
@@ -91,4 +90,3 @@ var displayWarning = function(repo) {
 };
 
 getRepoName();
-getRepoIssues();
