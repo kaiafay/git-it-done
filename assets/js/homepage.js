@@ -24,6 +24,12 @@ var getUserRepos = function(user) {
     });
 };
 
+var getFeaturedRepos = function(language) {
+    var apiUrl = "https://api.github.com/search/repositories?q=" + language + "+is:featured&sort=help-wanted-issues";
+
+    fetch(apiUrl);
+};
+
 var displayRepos = function(repos, searchTerm) {
     // check if API returned any repos
     if (repos.length === 0) {
